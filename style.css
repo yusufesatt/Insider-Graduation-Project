@@ -1,10 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .col{
     background-color: red;
     height: 40px;
-    margin: 1px;
+    margin: 2px;
     border-radius: 10px;
 }
 
 .row{
-    width: 650px;
+    width: 750px;
 }
+
+.colHead{
+    margin: 2px;
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    border-radius: 8px;
+}
+
