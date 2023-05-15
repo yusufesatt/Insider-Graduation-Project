@@ -1,0 +1,10 @@
+.col{
+    background-color: red;
+    height: 40px;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.row{
+    width: 650px;
+}
