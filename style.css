@@ -1,9 +1,25 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #121214;
+}
 .col{
-    background-color: red;
+    background-color: #2a2a2c;
     height: 40px;
-    margin: 1px;
+    margin: 2px;
     border-radius: 10px;
+}
+
+.col:hover{
+    background-color: #4d4d4f;
+}
+
+.gray-div{
+    background-color: #414143;
+}
+
+.gray-div:hover{
+    background-color: #5a5a5b;
 }
 
 .row{
@@ -11,9 +27,13 @@
 }
 
 .colHead{
-    margin: 3px;
-    border-radius: 10px;
-    background-color: black;
+    margin: 2px;
+    width: 60px;
     height: 40px;
-    width: 80px;
+    background-color: #2a2a2c;
+    border-radius: 8px;
+}
+
+.colHead:hover{
+    background-color: #4d4d4f;
 }
