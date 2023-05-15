@@ -1,0 +1,20 @@
+.col{
+    background-color: red;
+    height: 40px;
+    margin: 1px;
+    border-radius: 10px;
+}
+.firstCol{
+    background-color: blue;
+    height: 40px;
+    margin: 1px;
+    border-radius: 10px;
+    width: 8%;
+}
+.row{
+    width: 80%;
+    flex-wrap: nowrap;
+}
+
+.width80{width: 80%;}
+.height40px{height: 40px;}
