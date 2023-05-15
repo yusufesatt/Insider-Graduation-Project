@@ -1,0 +1,19 @@
+
+.col{
+    background-color: red;
+    height: 40px;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.row{
+    width: 750px;
+}
+
+.colHead{
+    margin: 3px;
+    border-radius: 10px;
+    background-color: black;
+    height: 40px;
+    width: 80px;
+}
