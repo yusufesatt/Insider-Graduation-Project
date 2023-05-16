@@ -11,14 +11,126 @@ for(let i = 0; i < allDivs.length; i++) {
   });
 }
 
+
+/* 1. Satır Green tüm divlerin renklendirmesi */ 
 var row = document.getElementById("row1");
 var divs = row.getElementsByClassName('col');
 
 for(var i = 0; i < divs.length; i++) {
   divs[i].addEventListener("click", function() {
-    this.style.backgroundColor = "#0dc75b";
+    if (this.style.backgroundColor === "rgb(13, 199, 91)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#0dc75b";
+    }
   });
 }
+
+
+/*2. Satır kırmızı tüm divlerin renklendirmesi */
+var row = document.getElementById("row2");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(255, 5, 74)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#ff054a";
+    }
+  });
+}
+
+/* 3. Satır orange tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row3");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(255, 115, 23)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#ff7317";
+    }
+  });
+}
+
+/* 4. Satır yellow tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row4");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(245, 185, 22)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#f5b916";
+    }
+  });
+}
+
+/* 5. Satır blue tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row5");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(26, 203, 247)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#1acbf7";
+    }
+  });
+}
+
+/* 6. Satır purple tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row6");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(128, 86, 245)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#8056f5";
+    }
+  });
+}
+
+/* 7. Satır pink tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row7");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(255, 116, 182)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#ff74b6";
+    }
+  });
+}
+
+/* 8. Satır raspberry tüm divlerin renklendirmesi */
+
+var row = document.getElementById("row8");
+var divs = row.getElementsByClassName('col');
+
+for(var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", function() {
+    if (this.style.backgroundColor === "rgb(198, 25, 77)") {
+      this.style.backgroundColor = "";
+    } else {
+      this.style.backgroundColor = "#c6194d";
+    }
+  });
+}
+
 
 
 
