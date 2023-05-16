@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+/*----------ANİMASYONLU YAZI-----------------*/
+.hero{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 2px #8000ff;
+    background: url(img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* --------------SAYFALAR----------------- */
+.page1{
+    height: 100vh;
+    width: 99vw;
+}
+
+img{
+    width: 50vw;
+}
+
+.page2{
+    height: 100vh;
+    width: 99vw;
+    background: #8000ff;
+}
+
+/*-----------SCROLLBAR-----------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background:#555 ; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(87deg, rgba(242,64,4,1) 22%, rgba(104,0,187,1) 89%); 
+  }
