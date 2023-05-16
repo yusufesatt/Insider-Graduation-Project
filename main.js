@@ -168,5 +168,11 @@ document.getElementById("row1Green").addEventListener("click", function() {
     this.style.backgroundColor = "#c6194d";
   });
 
-
-  
+/*kerem*/ 
+$(document).ready(function() {
+    $(".row1Green").hover(function() {
+      $(this).css('background-color', '#0ea34d');
+    }, function() {
+      $(this).css('background-color', '#0dc75b');
+    });
+  });
