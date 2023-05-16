@@ -4,8 +4,9 @@
     font-family: sans-serif;
 }
 
+
 body{
-    background-color: #000;
+    background-color: #161616;
 }
 
 .hero{
@@ -20,14 +21,78 @@ body{
 h1{
     font-size: 60px;
     color: transparent;
-    -webkit-text-stroke: 2px #8000ff;
+    -webkit-text-stroke: 2px #f98606;
     background: url(img/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
-    animation: back 20s linear infinite;
+    animation: back 10s linear infinite;
+    margin-bottom: 4%;
 }
 @keyframes back{
     100%{
         background-position: 2000px 0;
     }
 }
+
+.btn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #f98606;
+    color: #f98606;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.btn p{
+    font-size: 20px;
+    padding-top: 12px;
+    font-weight: bold;
+    transition: 1s;
+}
+span{
+    width: 90px;
+    height: 80px;
+    top: 80px;
+    position: absolute;
+    background: #f98606;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+span:nth-child(1){
+    left: -20px;
+    transition-delay: .1s;
+}
+span:nth-child(2){
+    left: 30px;
+    transition-delay: .3s;
+}
+span:nth-child(3){
+    left: 80px;
+    transition-delay: .5s;
+}
+span:nth-child(4){
+    left: 125px;
+    transition-delay: .7s;
+}
+.btn:hover span{
+    top: -10px;
+}
+.btn:hover p{
+    color: #000;
+    transition-delay: .5s;
+}
+.btn:hover{
+    border: 4px solid black;
+}
+
+
+@media(max-width: 700px){
+    .hero h1{
+        font-size: 26px;
+        margin-bottom: 10%;
+    }
+}
+
+
