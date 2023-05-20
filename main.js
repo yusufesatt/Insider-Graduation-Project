@@ -1,3 +1,50 @@
+// Parent container
+var container = document.createElement("div");
+container.className = "container";
+
+// Define colors for each row
+var colors = [
+  "row1Green",
+  "row2Red",
+  "row3Orange",
+  "row4Yellow",
+  "row5Blue",
+  "row6Purple",
+  "row7Pink",
+  "row8Raspberry"
+];
+
+// Create rows and columns
+for (var i = 0; i < colors.length; i++) {
+  var row = document.createElement("div");
+  row.className = "row";
+  row.id = "row" + (i + 1);
+
+  var colHead = document.createElement("div");
+  colHead.className = "colHead";
+  colHead.id = "row" + (i + 1) + colors[i];
+  row.appendChild(colHead);
+
+  for (var j = 0; j < 12; j++) {
+    var col = document.createElement("div");
+    col.className = "col";
+    if (j % 3 === 0) {
+      col.className += " gray-div";
+    }
+    row.appendChild(col);
+  }
+
+  container.appendChild(row);
+}
+
+// Append container to the body after page is loaded
+document.addEventListener("DOMContentLoaded", function() {
+  document.body.appendChild(container);
+});
+
+
+
+
 let allDivs = document.querySelectorAll(".colHead");
 let prevDiv = null;
 
@@ -169,4 +216,6 @@ document.getElementById("row1Green").addEventListener("click", function() {
   });
 
 
+
+  
   
