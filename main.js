@@ -44,21 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-let allDivs = document.querySelectorAll(".colHead");
-let prevDiv = null;
-
-for(let i = 0; i < allDivs.length; i++) {
-  allDivs[i].addEventListener("click", function() {
-    if(prevDiv !== null) {
-      prevDiv.style.backgroundColor = "";
-    }
-    this.style.backgroundColor = "#2a2a2c";
-    prevDiv = this;
-  });
-}
-
-
 /* 1. Satır Green tüm divlerin renklendirmesi */ 
 var row = document.getElementById("row1");
 var divs = row.getElementsByClassName('col');
