@@ -67,6 +67,7 @@ img {
     width: 10px;
 }
 
+
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
@@ -116,7 +117,7 @@ img {
 
 .menu-btn span,
 .menu-btn:before,
-.menu-btn:after {
+     .menu-btn:after {
     content: "";
     position: absolute;
     top: calc(50% - 1px);
@@ -124,7 +125,7 @@ img {
     width: 40%;
     border-bottom: 2px solid #00ffff;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
+} 
 
 .menu-btn:before {
     transform: translateY(-8px);
@@ -170,7 +171,7 @@ img {
 .wrapper ul li {
     /*butonlar*/
     height: 10%;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .wrapper ul li a {
@@ -235,7 +236,7 @@ img {
         0 0 25px #03e9f4,
         0 0 50px #03e9f4,
         0 0 200px #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
 }
 
 /**/.wrapper ul li a span{
