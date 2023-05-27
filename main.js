@@ -1,60 +1,81 @@
-let allDivs = document.querySelectorAll(".colHead");
-let prevDiv = null;
 
-for(let i = 0; i < allDivs.length; i++) {
-  allDivs[i].addEventListener("click", function() {
-    if(prevDiv !== null) {
-      prevDiv.style.backgroundColor = "";
+document.addEventListener("DOMContentLoaded", function() {
+  // Parent container
+  var container = document.createElement("div");
+  container.className = "container";
+
+  // Define colors for each row
+  var rowColors = [
+    { id: "row1Green", color: "#0dc75b" },
+    { id: "row2Red", color: "#ff054a" },
+    { id: "row3Orange", color: "#ff7317" },
+    { id: "row4Yellow", color: "#f5b916" },
+    { id: "row5Blue", color: "#1acbf7" },
+    { id: "row6Purple", color: "#8056f5" },
+    { id: "row7Pink", color: "#ff74b6" },
+    { id: "row8Raspberry", color: "#c6194d" }
+  ];
+
+  // Create rows and columns
+  for (var i = 0; i < rowColors.length; i++) {
+    var row = document.createElement("div");
+    row.className = "row";
+    row.id = rowColors[i].id;
+
+    var colHead = document.createElement("div");
+    colHead.className = "colHead";
+    row.appendChild(colHead);
+
+    for (var j = 0; j < 12; j++) {
+      var col = document.createElement("div");
+      col.className = "col";
+      if (j % 3 === 0) {
+        col.className += " gray-div";
+      }
+      row.appendChild(col);
     }
-    this.style.backgroundColor = "#2a2a2c";
-    prevDiv = this;
-  });
-}
 
-var row = document.getElementById("row1");
-var divs = row.getElementsByClassName('col');
+    container.appendChild(row);
+  }
 
-for(var i = 0; i < divs.length; i++) {
-  divs[i].addEventListener("click", function() {
-    this.style.backgroundColor = "#0dc75b";
-  });
-}
+  // Append container to the body after page is loaded
+  document.body.appendChild(container);
 
-
-
-
-document.getElementById("row1Green").addEventListener("click", function() {
-    this.style.backgroundColor = "#0dc75b";
-  });
-
+  // Add click events to individual divs and colHeads
+  var allDivs = document.getElementsByClassName("col");
+  var allColHeads = document.getElementsByClassName("colHead");
   
-  document.getElementById("row2Red").addEventListener("click", function() {
-    this.style.backgroundColor = "#ff054a";
-  });
+  for (var i = 0; i < allDivs.length; i++) {
+    allDivs[i].addEventListener("click", function() {
+      if (this.style.backgroundColor === "") {
+        var rowId = this.parentNode.id;
+        var rowColor = getRowColor(rowId);
+        this.style.backgroundColor = rowColor;
+      } else {
+        this.style.backgroundColor = "";
+      }
+    });
+  }
   
-  document.getElementById("row3Orange").addEventListener("click", function() {
-    this.style.backgroundColor = "#ff7317";
-  });
+  for (var i = 0; i < allColHeads.length; i++) {
+    allColHeads[i].addEventListener("click", function() {
+      if (this.style.backgroundColor === "") {
+        var rowId = this.parentNode.id;
+        var rowColor = getRowColor(rowId);
+        this.style.backgroundColor = rowColor;
+      } else {
+        this.style.backgroundColor = "";
+      }
+    });
+  }
 
-  document.getElementById("row4Yellow").addEventListener("click", function() {
-    this.style.backgroundColor = "#f5b916";
-  });
-
-  document.getElementById("row5Blue").addEventListener("click", function() {
-    this.style.backgroundColor = "#1acbf7";
-  });
-
-  document.getElementById("row6Purple").addEventListener("click", function() {
-    this.style.backgroundColor = "#8056f5";
-  });
-
-  document.getElementById("row7Pink").addEventListener("click", function() {
-    this.style.backgroundColor = "#ff74b6";
-  });
-  
-  document.getElementById("row8Raspberry").addEventListener("click", function() {
-    this.style.backgroundColor = "#c6194d";
-  });
-
-
-  
+  // Get the color of the row based on the row id
+  function getRowColor(rowId) {
+    for (var i = 0; i < rowColors.length; i++) {
+      if (rowColors[i].id === rowId) {
+        return rowColors[i].color;
+      }
+    }
+    return "";
+  }
+});
