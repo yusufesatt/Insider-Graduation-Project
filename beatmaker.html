@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MelodyByte</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="audio-list">
+            <div class="audio tom-btn">
+                <p>Tom</p>
+                <audio id="tAudio" src="sound/808 (bass bu kankalar).wav">
+                </audio>
+            </div>
+
+            <div class="audio clap-btn">
+                <p>Clap</p>
+                <audio id="cAudio">
+                    <source src="sound/hi hat - orkunisitmak.wav">
+                    </source>
+                </audio>
+            </div>
+
+            <div class="audio kick-btn">
+                <p>Kick</p>
+                <audio id="kAudio">
+                    <source src="sound/Kick - Retro.wav">
+                    </source>
+                </audio>
+            </div>
+
+            <div class="audio openhat-btn">
+                <p>Open Hat</p>
+                <audio id="oAudio">
+                    <source src="sound/open hat.wav">
+                    </source>
+                </audio>
+            </div>
+
+            <div class="audio boom-btn">
+                <p>Boom</p>
+                <audio id="bAudio">
+                    <source src="sound/Perc - Tambo.wav">
+                    </source>
+                </audio>
+            </div>
+
+            <div class="audio ride-btn">
+                <p>Ride</p>
+                <audio id="rAudio">
+                    <source src="sound/rim shot.wav">
+                    </source>
+                </audio>
+            </div>
+
+            <div class="audio snare-btn">
+                <p>Snare</p>
+                <audio id="sAudio">
+                    <source src="sound/Snare - Snapper.wav">
+                    </source>
+                </audio>
+            </div>
+        </div>
+
+        <div class="audio-board">
+            <div class="title">
+                <h1>MelodyByte</h1>
+            </div>
+            <div class="play-btn">
+                <div class="btn play" onClick="play();"></div>
+                <div class="btn stop" onClick="stop();"></div>
+            </div>
+            <div class="tomColumn column">
+                <div class="square tom tom1"></div>
+                <div class="square tom tom2"></div>
+                <div class="square tom tom3"></div>
+                <div class="square tom tom4"></div>
+                <div class="square tom tom5"></div>
+                <div class="square tom tom6"></div>
+                <div class="square tom tom7"></div>
+                <div class="square tom tom8"></div>
+            </div>
+            <div class="clapColumn column">
+                <div class="square clap clap1"></div>
+                <div class="square clap clap2"></div>
+                <div class="square clap clap3"></div>
+                <div class="square clap clap4"></div>
+                <div class="square clap clap5"></div>
+                <div class="square clap clap6"></div>
+                <div class="square clap clap7"></div>
+                <div class="square clap clap8"></div>
+            </div>
+            <div class="kickColumn column">
+                <div class="square kick kick1"></div>
+                <div class="square kick kick2"></div>
+                <div class="square kick kick3"></div>
+                <div class="square kick kick4"></div>
+                <div class="square kick kick5"></div>
+                <div class="square kick kick6"></div>
+                <div class="square kick kick7"></div>
+                <div class="square kick kick8"></div>
+            </div>
+            <div class="hatColumn column">
+                <div class="square hat hat1"></div>
+                <div class="square hat hat2"></div>
+                <div class="square hat hat3"></div>
+                <div class="square hat hat4"></div>
+                <div class="square hat hat5"></div>
+                <div class="square hat hat6"></div>
+                <div class="square hat hat7"></div>
+                <div class="square hat hat8"></div>
+            </div>
+            <div class="boomColumn column">
+                <div class="square boom boom1"></div>
+                <div class="square boom boom2"></div>
+                <div class="square boom boom3"></div>
+                <div class="square boom boom4"></div>
+                <div class="square boom boom5"></div>
+                <div class="square boom boom6"></div>
+                <div class="square boom boom7"></div>
+                <div class="square boom boom8"></div>
+            </div>
+            <div class="rideColumn column">
+                <div class="square ride ride1"></div>
+                <div class="square ride ride2"></div>
+                <div class="square ride ride3"></div>
+                <div class="square ride ride4"></div>
+                <div class="square ride ride5"></div>
+                <div class="square ride ride6"></div>
+                <div class="square ride ride7"></div>
+                <div class="square ride ride8"></div>
+            </div>
+            <div class="snareColumn column">
+                <div class="square snare snare1"></div>
+                <div class="square snare snare2"></div>
+                <div class="square snare snare3"></div>
+                <div class="square snare snare4"></div>
+                <div class="square snare snare5"></div>
+                <div class="square snare snare6"></div>
+                <div class="square snare snare7"></div>
+                <div class="square snare snare8"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

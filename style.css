@@ -1,39 +1,198 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    background-color: #121214;
-}
-.col{
-    background-color: #2a2a2c;
-    height: 40px;
-    margin: 2px;
-    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
 }
 
-.col:hover{
-    background-color: #4d4d4f;
+body {
+    /* background-color: #121214; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gray-div{
-    background-color: #414143;
-}
+.container {
+    width: 80%;
+    min-width: 800px;
+    height: 70%;
+    min-height: 400px;
+    display: flex;
+    position: relative;
 
-.gray-div:hover{
-    background-color: #5a5a5b;
-}
+    .audio-list {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
-.row{
-    width: 750px;
-}
+        .audio {
+            width: 120px;
+            height: 60px;
+            background-color: #eee;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-.colHead{
-    margin: 2px;
-    width: 60px;
-    height: 40px;
-    background-color: #2a2a2c;
-    border-radius: 8px;
-}
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 
-.colHead:hover{
-    background-color: #4d4d4f;
+    .audio-board {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .title {
+            width: 100%;
+            position: absolute;
+            top: -80px;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                display: block;
+                padding: 10px 40px;
+                color: #fff;
+                background-color: #f78259;
+            }
+        }
+
+        .play-btn {
+            width: 100%;
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-color: #f78259;
+                border-radius: 50%;
+                position: relative;
+
+                // &:last-of-type {
+                //   margin-left: 20px;
+                // }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .play {
+                display: block;
+
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 15px;
+                    left: 22px;
+                    border-top: 15px solid transparent;
+                    border-left: 20px solid #fff;
+                    border-bottom: 15px solid transparent;
+                }
+            }
+
+            .stop {
+                display: none;
+
+                &:before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 18px;
+                    left: 18px;
+                }
+            }
+
+            .not-active {
+                opacity: 0.5;
+
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+
+        .column {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            .square {
+                width: 55px;
+                height: 55px;
+                transition: all 0.2s;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .active-btn {
+                transform: scale(1.2);
+            }
+
+            .tom {
+                background-color: #0dc75b;
+                opacity: 0.3;
+            }
+
+            .clap {
+                background-color: #ff80ff;
+                opacity: 0.3;
+            }
+
+            .kick {
+                background-color: #cde800;
+                opacity: 0.3;
+            }
+
+            .hat {
+                background-color: #7659f7;
+                opacity: 0.3;
+            }
+
+            .boom {
+                background-color: #ff962e;
+                opacity: 0.3;
+            }
+
+            .ride {
+                background-color: #20e381;
+                opacity: 0.3;
+            }
+
+            .snare {
+                background-color: #1d56b8;
+                opacity: 0.3;
+            }
+
+            .play {
+                opacity: 1;
+            }
+        }
+    }
 }
