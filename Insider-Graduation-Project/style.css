@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(18, 234, 209,0.8), rgb(82, 240, 190,0.8), rgb(124, 245, 169,0.8), rgb(162, 248, 148, 0.8), rgb(199, 249, 130, 0.8), rgb(222, 221, 98, 0.8), rgb(238, 192, 81, 0.8), rgb(247, 162, 80, 0.8), rgb(218, 103, 83, 0.8), rgb(168, 55, 88, 0.8), rgb(104, 25, 84, 0.8), rgb(31, 11, 65, 0.8));    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    min-width: 800px;
+    height: 70%;
+    min-height: 400px;
+    display: flex;
+    position: relative;
+    margin: 0 30%;
+
+    .audio-list {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .audio {
+            width: 120px;
+            height: 60px;
+            background-color: #eee;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .audio-board {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+
+        .title {
+            width: 100%;
+            position: absolute;
+            top: -80px;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .play-btn {
+            width: 100%;
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-color: #c6194d;
+                border-radius: 50%;
+                position: relative;
+
+                /* &:last-of-type {
+                margin-left: 20px;
+                } */
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .play {
+                display: block;
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 15px;
+                    left: 22px;
+                    border-top: 15px solid transparent;
+                    border-left: 20px solid #fff;
+                    border-bottom: 15px solid transparent;
+                }
+            }
+
+            .stop {
+                display: none;
+
+                &:before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 18px;
+                    left: 18px;
+                }
+            }
+
+            .not-active {
+                opacity: 0.1;
+
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+
+        .column {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start ;
+            .square {
+                border-radius: 15%;
+                margin-right: 3%;
+                width: 55px;
+                height: 55px;
+                transition: all 0.2s;
+                /* background-color:#414143 ; */
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            
+            .active-btn {
+                transform: scale(1.2);
+            }
+
+            .tom {
+                background-color: #0dc75b;
+                opacity: 0.5;
+            }           
+
+            .clap {
+                background-color: #ff054a;
+                opacity: 0.5;
+            }
+
+            .kick {
+                background-color: #ff7317;
+                opacity: 0.5;
+            }
+
+            .hat {
+                background-color: #f5b916;
+                opacity: 0.5;
+            }
+
+            .boom {
+                background-color: #1acbf7;
+                opacity: 0.5;
+            }
+
+            .ride {
+                background-color: #8056f5;
+                opacity: 0.5;
+            }
+
+            .snare {
+                background-color: #ff74b6;
+                opacity: 0.5;
+            }
+
+            .play {
+                opacity: 1;
+            }
+        }
+    }
+}
