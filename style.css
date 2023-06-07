@@ -6,6 +6,7 @@
 
 body {
     /* background-color: #121214; */
+    background-image: linear-gradient(to right top, #000000, #0e0c0d, #171516, #1f1c1e, #262326, #373538, #4a484c, #5d5c60, #838285, #aaaaac, #d4d4d5, #ffffff);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -62,12 +63,12 @@ body {
             align-items: center;
             justify-content: center;
 
-            h1 {
+            /* h1 {
                 display: block;
                 padding: 10px 40px;
                 color: #fff;
                 background-color: #f78259;
-            }
+            } */
         }
 
         .play-btn {
@@ -88,9 +89,9 @@ body {
                 border-radius: 50%;
                 position: relative;
 
-                // &:last-of-type {
+                /* // &:last-of-type {
                 //   margin-left: 20px;
-                // }
+                // } */
 
                 &:hover {
                     cursor: pointer;
@@ -188,6 +189,11 @@ body {
             .snare {
                 background-color: #1d56b8;
                 opacity: 0.3;
+            }
+
+            .kas{
+                width: 10px;
+                height: 10px;
             }
 
             .play {
