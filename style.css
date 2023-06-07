@@ -5,13 +5,7 @@
 }
 
 body {
-<<<<<<< HEAD
-    /* background-color: #121214; */
-    background-image: linear-gradient(to right top, #000000, #0e0c0d, #171516, #1f1c1e, #262326, #373538, #4a484c, #5d5c60, #838285, #aaaaac, #d4d4d5, #ffffff);
-    width: 100vw;
-=======
     background-image: radial-gradient(circle, rgb(18, 234, 209,0.8), rgb(82, 240, 190,0.8), rgb(124, 245, 169,0.8), rgb(162, 248, 148, 0.8), rgb(199, 249, 130, 0.8), rgb(222, 221, 98, 0.8), rgb(238, 192, 81, 0.8), rgb(247, 162, 80, 0.8), rgb(218, 103, 83, 0.8), rgb(168, 55, 88, 0.8), rgb(104, 25, 84, 0.8), rgb(31, 11, 65, 0.8));    width: 100vw;
->>>>>>> 39e8cd9ca9224349fb209d61f058f23f7a52ccc3
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -68,15 +62,6 @@ body {
             align-items: center;
             justify-content: center;
 
-<<<<<<< HEAD
-            /* h1 {
-                display: block;
-                padding: 10px 40px;
-                color: #fff;
-                background-color: #f78259;
-            } */
-=======
->>>>>>> 39e8cd9ca9224349fb209d61f058f23f7a52ccc3
         }
 
         .play-btn {
@@ -97,15 +82,9 @@ body {
                 border-radius: 50%;
                 position: relative;
 
-<<<<<<< HEAD
-                /* // &:last-of-type {
-                //   margin-left: 20px;
-                // } */
-=======
                 /* &:last-of-type {
                 margin-left: 20px;
                 } */
->>>>>>> 39e8cd9ca9224349fb209d61f058f23f7a52ccc3
 
                 &:hover {
                     cursor: pointer;
@@ -203,11 +182,6 @@ body {
             .snare {
                 background-color: #ff74b6;
                 opacity: 0.5;
-            }
-
-            .kas{
-                width: 10px;
-                height: 10px;
             }
 
             .play {
