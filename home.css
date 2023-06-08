@@ -354,3 +354,7 @@ input[type="checkbox"] {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.descriptions{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
