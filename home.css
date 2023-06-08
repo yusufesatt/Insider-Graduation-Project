@@ -10,6 +10,8 @@
 body {
     background-color: #000;
     overflow-x: hidden !important; /*yatay scroolu kaldırmak için*/
+
+
 }
 
 /* --------------SAYFALAR----------------- */
@@ -36,19 +38,19 @@ img {
 /*-----------SCROLLBAR-----------------------*/
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: #555;
+    background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(87deg, rgba(242, 64, 4, 1) 22%, rgba(104, 0, 187, 1) 89%);
+    background:#00ffff;
 }
 
 /* -------------------HAMBURGER-MENU----------------------- */
@@ -332,14 +334,12 @@ input[type="checkbox"] {
     text-align: left;
 }
 
-.text #foryou{ 
+#foryou{ 
     font-family: 'Helvatica Neue Pro Outline';
-    font-size: 100px;
 }
 
-.text #beatmaker{
+#beatmaker{
     font-family: 'Helvatica Bolder';
-    font-size: 82px;
 }
 
 #melodybyte{
@@ -347,9 +347,14 @@ input[type="checkbox"] {
 }
 
 #dawcontent{
-    font-family: 'Helvatica Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     background: #8759D7;
     background: linear-gradient(to right, #8759D7 0%, #CFCFCF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.descriptions{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
