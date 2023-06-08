@@ -10,6 +10,8 @@
 body {
     background-color: #000;
     overflow-x: hidden !important; /*yatay scroolu kaldırmak için*/
+
+
 }
 
 /* --------------SAYFALAR----------------- */
@@ -347,7 +349,8 @@ input[type="checkbox"] {
 }
 
 #dawcontent{
-    font-family: 'Helvatica Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     background: #8759D7;
     background: linear-gradient(to right, #8759D7 0%, #CFCFCF 100%);
     -webkit-background-clip: text;
