@@ -334,14 +334,12 @@ input[type="checkbox"] {
     text-align: left;
 }
 
-.text #foryou{ 
+#foryou{ 
     font-family: 'Helvatica Neue Pro Outline';
-    font-size: 100px;
 }
 
-.text #beatmaker{
+#beatmaker{
     font-family: 'Helvatica Bolder';
-    font-size: 82px;
 }
 
 #melodybyte{
