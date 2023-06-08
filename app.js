@@ -1,6 +1,5 @@
 const tomBeat = document.getElementById("tAudio");
 const tomBtn = document.querySelector(".tom-btn");
-const tom = document.querySelector(".tom");
 
 const clapBeat = document.getElementById("cAudio");
 const clapBtn = document.querySelector(".clap-btn");
@@ -70,36 +69,13 @@ const iterate = (list, timing, sound) => {
     });
 };
 
-
-
-tomBtn.addEventListener("click", () =>{
-    playTom();
-    // tomBtn.style.backgroundColor="#0dc75b";
-});
-clapBtn.addEventListener("click", () =>{
-    playClap();
-    // clapBtn.style.backgroundColor="#ff054a";
-});
-kickBtn.addEventListener("click", () =>{
-    playKick();
-    // kickBtn.style.backgroundColor="#ff7317";
-});
-openHatBtn.addEventListener("click", () =>{
-    playHat();
-    // openHatBtn.style.backgroundColor="#f5b916";
-});
-boomBtn.addEventListener("click", () =>{
-    playBoom();
-    // boomBtn.style.backgroundColor="#1acbf7";
-});
-rideBtn.addEventListener("click", () =>{
-    playRide();
-    // rideBtn.style.backgroundColor="#8056f5";
-});
-snareBtn.addEventListener("click", () =>{
-    playSnare();
-    // snareBtn.style.backgroundColor="#ff74b6";
-});
+tomBtn.addEventListener("click", () => playTom());
+clapBtn.addEventListener("click", () => playClap());
+kickBtn.addEventListener("click", () => playKick());
+openHatBtn.addEventListener("click", () => playHat());
+boomBtn.addEventListener("click", () => playBoom());
+rideBtn.addEventListener("click", () => playRide());
+snareBtn.addEventListener("click", () => playSnare());
 
 const playTom = () => {
     tomBeat.currentTime = 0;
@@ -175,4 +151,5 @@ const stop = () => {
     // stopBtn.classList.add("not-active");
     // playBtn.classList.remove("not-active");
 }
+
 
