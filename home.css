@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -360,22 +366,12 @@ input[type="checkbox"] {
 }
 
 /**/
-.footer{
-    background-color: black;
-    text-align: center;
-}
 
-.footer-img{
-    margin: 25px 0px -10px 0px;
-    width: 300px;
-    height: 50px;
-}
-
-.footer .share{
+.share{
     padding: 1rem 0;
 }
 
-.footer .share a {
+.share a {
     width: 5rem;
     height: 5rem;
     color: white;
@@ -387,7 +383,7 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
-    width: 250px;
+    width: 350px;
     display:block;
     margin: 0 auto;
 }
@@ -406,6 +402,7 @@ ul.social-icons {
     color: #fff;
     text-decoration: none;
 }
+
 .fa-instagram {
     padding:10px 14px;
     -o-transition:.5s;
@@ -414,11 +411,12 @@ ul.social-icons {
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
+    
 }
 .fa-instagram:hover {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    
 }
+
 .fa-github {
     padding:10px 14px;
     -o-transition:.5s;
@@ -432,13 +430,20 @@ ul.social-icons {
 .fa-github:hover {
     background-color: #f8ceec;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    ;
 }
 
-.end h3{
-        color: white;
-    }
+.footer-img img{
+    width:300px;
+    height: 80px;
 
-    .end p{
-        color: white;
-    }
+}
+
+/*END*/
+
+.end h3{
+    color: white;
+}
+
+.end p{
+    color: white;
+}
