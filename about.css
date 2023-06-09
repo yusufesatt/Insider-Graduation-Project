@@ -1,60 +1,18 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-
-
 body {
-    background-color: #000;
-    overflow-x: hidden !important; /*yatay scroolu kaldırmak için*/
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
-
-}
-
-/* --------------SAYFALAR----------------- */
-.page1 {
-    height: 100vh;
-    width: 99vw;
-}
-
-img {
-    height: 400px;
-    margin: auto;
-}
-
-.page2 {
-    height: 100vh;
-    width: 99.5vw;
-    background: #8000ff;
-}
-
-.nav {
-    margin: auto;
-}
-
-/*-----------SCROLLBAR-----------------------*/
-/* width */
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: black;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background:#00ffff;
-}
-
-/* -------------------HAMBURGER-MENU----------------------- */
-
-.wrapper {
+  .wrapper {
     position: fixed;
     top: 0;
     /*left: -100%;*/
@@ -289,156 +247,96 @@ input[type="checkbox"] {
     transform: translateX(-100px);
 }
 
-/* ANASAYFA YAZİLAR*/
-
-@font-face {
-    font-family: 'Helvatica Neue Pro Outline';
-    src: url(fonts/HelveticaNeueLTPro-BdOu.otf) format('opentype');
-}
-@font-face {
-    font-family: 'Helvatica Bold';
-    src: url(fonts/helvetica-bold.woff.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Brown';
-    src: url(fonts/Brown.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Helvatica Bolder';
-    src: url(fonts/Helvetica\ 93\ Black\ Extended.ttf) format('truetype');
-}
-
-.video-container {
-    position: relative;
-}
-
-.video-container video {
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow efekti eklemek için */
-    opacity: 0.4; /* Opacity değerini istediğiniz düzeye ayarlayın */
-}
-
-.video-container .overlay {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-
-
-.video-container .overlay .text {
-    text-align: left;
-}
-
-#foryou{ 
-    font-family: 'Helvatica Neue Pro Outline';
-}
-
-#beatmaker{
-    font-family: 'Helvatica Bolder';
-}
-
-#melodybyte{
-    font-family: 'Brown';
-}
-
-#dawcontent{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    background: #8759D7;
-    background: linear-gradient(to right, #8759D7 0%, #CFCFCF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.descriptions{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/**/
-.footer{
-    background-color: black;
+.topic-story{
+    float: left;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    font-size: 100px;
 }
 
-.footer-img{
-    margin: 25px 0px -10px 0px;
-    width: 300px;
-    height: 50px;
+.ica-img{
+    display: flex;
+
 }
 
-.footer .share{
-    padding: 1rem 0;
-}
-
-.footer .share a {
-    width: 5rem;
-    height: 5rem;
-    color: white;
-    font-size: 2.5rem;
-}
-
-ul {
-    padding:0;
-    list-style: none;
-}
-.footer-social-icons {
-    width: 250px;
-    display:block;
-    margin: 0 auto;
-}
-.social-icon {
-    color: #fff;
-}
-ul.social-icons {
-    margin-top: 10px;
-}
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-}
-.fa-instagram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-instagram:hover {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+.ica-img img{
+    float: right;
     
-}
-.fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+    width: 900px;
+    height: 600px;
 }
 
-.fa-github:hover {
-    background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    ;
+.story{
+    width: 500;
+    height: 300;
+    display:flexbox;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
 }
 
-.end h3{
-        color: white;
+.story p{
+    font-size: 20px;
+}
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
     }
-
-    .end p{
-        color: white;
-    }
+  }
