@@ -14,7 +14,7 @@ body {
 
 .container {
     width: 80%;
-    min-width: 800px;
+    min-width: 1400px;
     height: 70%;
     min-height: 400px;
     display: flex;
@@ -142,7 +142,6 @@ body {
                 height: 55px;
                 transition: all 0.2s;
                 box-shadow: 0 0 10px #00ffff;
-                /* background-color:#414143 ; */
                 &:hover {
                     cursor: pointer;
                 }
@@ -153,43 +152,36 @@ body {
             }
 
             .tom {
-                /* background-color: #0dc75b; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }           
 
             .clap {
-                /* background-color: #ff054a; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
 
             .kick {
-                /* background-color: #ff7317; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
 
             .hat {
-                /* background-color: #f5b916; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
 
             .boom {
-                /* background-color: #1acbf7; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
 
             .ride {
-                /* background-color: #8056f5; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
 
             .snare {
-                /* background-color: #ff74b6; */
                 background-color: #00ffff;
                 opacity: 0.5;
             }
