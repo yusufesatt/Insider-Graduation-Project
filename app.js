@@ -53,7 +53,7 @@ addBtns(snares);
 
 let tempo = 200;
 // let play = false;
-let beatLength = 8;
+let beatLength = 12;
 
 const iterate = (list, timing, sound) => {
     list.forEach((el, i) => {
@@ -133,7 +133,7 @@ const playSounds = (i) => {
 let musicPlaying;
 
 const play = () => {
-    musicPlaying = setInterval(playSounds, tempo * 8);
+    musicPlaying = setInterval(playSounds, tempo * 12);
     playBtn.style.display = "none";
     stopBtn.style.display = "block";
     // playBtn.removeAttribute("onclick");
