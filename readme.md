@@ -5,7 +5,7 @@
 # Özet
 
 MelodyByte, ritimlerin gücünü kullanarak müziğinizi hayatlandırmanızı sağlayan bir platformdur.
-Kendi benzersiz melodilerinizi oluşturarak, yaratıcılığınızı ifade edin ve müzik dünyasına adınızı kazıyın.Hayal gücünüzün sınırlarını aşın.
+Kendi benzersiz melodilerinizi oluşturarak, yaratıcılığınızı ifade edin ve müzik dünyasına adınızı kazıyın. Hayal gücünüzün sınırlarını aşın.
 
 
 
@@ -50,7 +50,7 @@ Hayır, MelodyByte kullanıcılardan hiç bir ücret talep etmez tamamen ücrets
   
 ## Geri Bildirim
 
-Herhangi bir geri bildiriminiz varsa, lütfen codecrackers@hotmail.com adresinden bize ulaşın.
+Herhangi bir geri bildiriminiz varsa, lütfen codecrackers@gmail.com adresinden bize ulaşın.
 
   
 ## Ekran Görüntüleri
@@ -62,4 +62,4 @@ Herhangi bir geri bildiriminiz varsa, lütfen codecrackers@hotmail.com adresinde
   
 ## Destek
 
-Destek için codecrackers@hotmail.com adresine e-posta gönderin.
+Destek için codecrackers@gmail.com adresine e-posta gönderin.
