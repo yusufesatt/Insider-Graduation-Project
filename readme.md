@@ -22,7 +22,7 @@ https://melodybyte.netlify.app
 ## Katkı Sağlayanlar
 
 - [@keremkdemir](https://github.com/keremkdemir)
-- [@Spyzah](https://github.com/Spyzah)
+- [@yusufesatt](https://github.com/yusufesatt)
 - [@3lfies](https://github.com/3lfies)
 - [@Alperencnky6](https://github.com/Alperencnky6)
 
